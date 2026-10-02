@@ -2,7 +2,7 @@
   "id": "qjrnl-test",
   "title": "Draxeyboi's Quest Journal - Dominic's version",
   "description": "A lightweight journal-backed quest tracker. GM creates and manages quests; players view them.",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "compatibility": {
     "minimum": "13",
     "verified": "14"
@@ -10,7 +10,7 @@
   "license": "LICENSE",
   "url":      "https://github.com/DominicDams/Draxeyboi-s-Quest-Journal",
   "manifest": "https://raw.githubusercontent.com/DominicDams/Draxeyboi-s-Quest-Journal/For-testing/module.json",
-  "download": "https://github.com/DominicDams/Draxeyboi-s-Quest-Journal/archive/refs/tags/1.1.6.zip",
+  "download": "https://github.com/DominicDams/Draxeyboi-s-Quest-Journal/archive/refs/tags/1.1.7.zip",
   "changelog": "https://raw.githubusercontent.com/DominicDams/Draxeyboi-s-Quest-Journal/For-testing/CHANGELOG.md",
   "authors": [{ "name": "Draxeyboi" }, {"name": "DominicDams"}],
   "esmodules": ["quest-journal.mjs"],
