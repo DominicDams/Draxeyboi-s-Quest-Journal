@@ -109,7 +109,7 @@ export class QuestManager {
      * If we don't do this all the pages (and thus quest stages) which inherit
      * their ownership from the quest will be visible for all users.
      */
-      for(page in quest.pages) {
+      for(page in quest.pages?) {
         const current = page.ownership?.default ?? CONST.DOCUMENT_OWNERSHIP_LEVELS.INHERIT;
         if(current === CONST.DOCUMENT_OWNERSHIP_LEVELS.INHERIT)
           await page.update({ "ownership.default": CONST.DOCUMENT_OWNERSHIP_LEVELS.NONE});
