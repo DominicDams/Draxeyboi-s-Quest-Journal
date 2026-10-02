@@ -136,11 +136,12 @@ export class QuestManager {
     await page.update({ "ownership.default": next });
     const quest = page.parent;
     const questRevealed = (quest?.ownership?.default ?? 0) >= CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER;
-    if (next === CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER && questRevealed)
+    if (next === CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER && questRevealed) {
       await QuestManager.#announce(
         QuestManager.#chatCard("Quest Updated", `${quest.name} — ${page.name}`),
         "questUpdatedSound"
       );
+    }
   }
 
   static async togglePageDone(questId, pageId) {
